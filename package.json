@@ -1,0 +1,23 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node ./",
+      "lint": "npx eslint **/*.js --fix && npx prettier **/*.js --write",
+      "develop": "nodemon --exec ./node_modules/.bin/babel-node index.js"
+    },
+    "author": "dalonga",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.2"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-latest": "^6.24.1",
+      "eslint": "^8.7.0",
+      "nodemon": "^2.0.15",
+      "prettier": "^2.5.1"
+    }
+  }
